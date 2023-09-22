@@ -49,7 +49,7 @@ resource "azurerm_network_interface" "internal" {
 }
 
 #Creates Virtual Machine
-resource "azurerm_windows_virtual_machine" "main" {
+resource "azurerm_windows_vm" "main" {
   name = "learn-tf-vm-eastus"
   resource_group_name =  azurerm_resource_group.main.name
   location = azurerm_resource_group.main.location
